@@ -64,6 +64,7 @@ if (!$resultado) {
         <li><a href="linea-tiempo.html">Línea del tiempo</a></li>
         <li><a href="contacto.html">Contacto</a></li>
         <li><a href="tienda.php" aria-current="page">Tienda</a></li>
+        <li><a href="login.php">Administración</a></li>
     </ul>
 </nav>
 

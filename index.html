@@ -28,6 +28,7 @@
             <li><a href="catalogo.html">Tecnologías</a></li>
             <li><a href="linea-tiempo.html">Línea del tiempo</a></li>
             <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="login.php">Administración</a></li>
         </ul>
     </nav>
 
@@ -107,6 +108,22 @@
     <footer>
         <p>Proyecto académico - Desarrollo de Aplicaciones Web</p>
     </footer>
-<script src="js/menu-tienda.js"></script>
+<script>
+if (
+    window.location.hostname === "localhost" ||
+    window.location.hostname === "127.0.0.1"
+) {
+    const menu = document.querySelector(".menu ul");
+
+    const elemento = document.createElement("li");
+    const enlace = document.createElement("a");
+
+    enlace.href = "tienda.php";
+    enlace.textContent = "Tienda";
+
+    elemento.appendChild(enlace);
+    menu.appendChild(elemento);
+}
+</script>
 </body>
 </html>
